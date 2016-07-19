@@ -1,0 +1,19 @@
+// NOTE THAT THIS DEMO IS INCOMPLETE
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC>
+
+<hibernate-mapping>
+    <class name = "Service" table "SERVICE">
+        <meta attribute="class-description>
+            This class contains all services available
+        </meta>
+    <id name = "sku" type = "int" column = "sku">
+        <generator class = "native"/>
+    </id>
+    <property name = "name" column = "name" type = "string"/>
+    <property name = "price" column = "price" type = "double"/>
+    <property name = "timeToComplete" column = "time_to_complete" type = "int"/>
+    <property name = "active" column = "active" type = "boolean"/>
+    </class>
+</hibernate-mapping>
